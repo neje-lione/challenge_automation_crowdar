@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "required": [
+        "departments",
+        "landings",
+        "more_categories",
+        "high_priority"
+    ],
+    "properties": {
+        "departments": {
+            "type": "array"
+        },
+        "landings": {
+            "type": "array"
+        },
+        "more_categories": {
+            "type": "object",
+            "required": [
+                "label",
+                "permalink"
+            ],
+            "properties": {
+                "label": {
+                    "type": "string"
+                },
+                "permalink": {
+                    "type": "string"
+                }
+            }
+        },
+        "high_priority": {
+            "type": "array"
+        }
+    }
+}

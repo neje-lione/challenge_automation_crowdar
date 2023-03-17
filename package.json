@@ -7,7 +7,9 @@
     "loginTestChorme": "cypress run --spec cypress/e2e/loginTest.cy.js -b chrome",
     "loginTestEdge": "cypress run --spec cypress/e2e/loginTest.cy.js -b edge",
     "addingProductsTestChrome": "cypress run --spec cypress/e2e/addingProductsTest.cy.js -b chrome",
-    "addingProductsTestEdge": "cypress run --spec cypress/e2e/addingProductsTest.cy.js -b edge"
+    "addingProductsTestEdge": "cypress run --spec cypress/e2e/addingProductsTest.cy.js -b edge",
+    "apiDepartmentsTestChrome": "cypress run --spec cypress/e2e/apiDepartmentsTest.cy.js -b chrome",
+    "apiDepartmentsTestEdge": "cypress run --spec cypress/e2e/apiDepartmentsTest.cy.js -b edge"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,9 @@
   "devDependencies": {
     "cypress": "^12.8.0",
     "cypress-mochawesome-reporter": "^3.3.0"
+  },
+  "dependencies": {
+    "chai-json-schema": "^1.5.1",
+    "cypress-plugin-api": "^2.10.3"
   }
 }
