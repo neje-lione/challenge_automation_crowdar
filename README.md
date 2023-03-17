@@ -9,7 +9,7 @@ Descargar el proyecto desde el repositorio, mediante download zip, o clonando el
 
 En el directorio donde se descargo el mismo, abrir una terminal de consola.
 
-## 🚀 Descargar proyecto
+## 🚀 Instalar dependecias del proyecto
 Instalar las dependencias del proyecto con: npm i
 
 ## 🚀 Ejecución de tests
