@@ -4,7 +4,10 @@
   "description": "Challenge Automation for Crowdar",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "loginTestChorme": "cypress run --spec cypress/e2e/loginTest.cy.js -b chrome",
+    "loginTestEdge": "cypress run --spec cypress/e2e/loginTest.cy.js -b edge",
+    "addingProductsTestChrome": "cypress run --spec cypress/e2e/addingProductsTest.cy.js -b chrome",
+    "addingProductsTestEdge": "cypress run --spec cypress/e2e/addingProductsTest.cy.js -b edge"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/neje-lione/challenge_automation_crowdar#readme",
   "devDependencies": {
-    "cypress": "^12.8.0"
+    "cypress": "^12.8.0",
+    "cypress-mochawesome-reporter": "^3.3.0"
   }
 }

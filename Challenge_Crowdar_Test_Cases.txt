@@ -1,0 +1,111 @@
+Challenge Crowdar
+
+ID: 001
+Name: Inicio de sesión exitoso
+Expected Result: 
+	Visualizar la página de productos junto al titulo Swag Labs. 
+	También se debera redireccionar al url /inventory.html
+	Visualizar botón hamburguesa en margen superior izquierdo
+	Visualizar botón carro de compras en margen superior derecho
+Test data:
+	username: standard_user
+	password: secret_sauce
+
+ID: 002
+Name: Iniciar sesión sin datos
+Expected Result: Visualizar el mensaje: "Epic sadface: Username is required"
+Test data:	-	
+
+ID:003
+Name: Iniciar sesión sin password
+Expected Result: Visualizar el mensaje: "Epic sadface: Password is required"
+Test data:
+	username: standard_user
+
+ID:004
+Name: Iniciar sesión sin username
+Expected Result: Visualizar el mensaje: "Epic sadface: Username is required"
+Test data:	
+	password: secret_sauce
+
+ID:005
+Name: Iniciar sesión con username incorrecto
+Expected Result: Visualizar el mensaje: "Epic sadface: Username and password do not match any user in this service."
+Test data:	
+	username: dummy_username
+	password: secret_sauce
+
+ID:006
+Name: Iniciar sesión con password incorrecto
+Expected Result: Visualizar el mensaje: "Epic sadface: Username and password do not match any user in this service."
+Test data:	
+	username: standard_user
+	password: dummy_password
+
+ID:007
+Name: Inicio de sesión de usuario bloqueado
+Expected Result: Visualizar el mensaje: "Epic sadface: Sorry, this user has been locked out."
+Test data:	
+	username: locked_out_user
+	password: secret_sauce
+
+ID: 008
+Name: Iniciar sesión con usuario con problema
+Expected Result: 
+	Visualizar la página de productos donde cada producto tiene la imagen de un perro con una pelota verde en la boca.
+	También se debera redireccionar al url /inventory.html
+Test data:
+	username: problem_user
+	password: secret_sauce
+
+ID: 009
+Name: Iniciar sesión con username de performance
+Expected Result: 
+	Visualizar la página de productos junto al titulo Swag Labs. 
+	También se debera redireccionar al url /inventory.html
+Test data:
+	username: performance_glitch_user
+	password: secret_sauce
+
+ID: 010
+Name: Agregar un articulo al carrito de compras
+Expected Result: 
+	El articulo agregado cambia el nombre de su boton a "Remove"
+	El carro de compras indica "1" siendo el articulo agregado
+Pre condition:
+	Estar logueado en el sitio con usuario correcto.
+
+ID: 011
+Name: Remover un articulo del carrito de compras desde inventory
+Expected Result: 
+	En el articulo removido, el botón cambia a "add to cart"
+	En el carro de compras se elimina el número "1"
+Pre condition:
+	Estar logueado en el sitio con usuario correcto.
+	Tener agregado un articulo en el carrito de compras
+
+ID: 012
+Name: Agregar 2 articulos al carrito de compras
+Expected Result: 
+	El articulo agregado cambia el nombre de su boton a "Remove"
+	El carro de compras indica la cantidad (2) siendo el total de articulos agregados
+Pre condition:
+	Estar logueado en el sitio con usuario correcto.
+
+ID: 013
+Name: Agregar N articulos al carrito de compras
+Expected Result: 
+	El articulo agregado cambia el nombre de su boton a "Remove"
+	El carro de compras indica la cantidad (N) siendo el total de articulos agregados
+Pre condition:
+	Estar logueado en el sitio con usuario correcto.
+
+ID: 014
+Name: Remover un articulo del carrito de compras
+Expected Result: 
+	Ingresar al carrito de compras
+	Remover el articulo desde el botón "Remove"
+	La cantidad de articulos en el carrito, disminuye en una unidad
+Pre condition:
+	Estar logueado en el sitio con usuario correcto.
+	Tener agregado mas de un articulo en el carrito de compras

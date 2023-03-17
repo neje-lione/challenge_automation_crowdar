@@ -1,0 +1,9 @@
+{
+    "STANDARD_USER":"standard_user",
+    "LOCKED_OUT_USER":"locked_out_user",
+    "PROBLEM_USER":"problem_user",
+    "PERFORMANCE_USER":"performance_glitch_user",
+    "DUMMY_USER":"dummy_user",
+    "DUMMY_PASSWORD":"dummy_pasword",
+    "SYSTEM_PASSWORD":"secret_sauce"
+}
