@@ -15,11 +15,13 @@ describe('Iniciar Sesión en Swag Labs', () => {
   });
 
 
-  it('001 - Inicio de sesión exitoso', () => {        
+  it('001 - Inicio de sesión exitoso', () => {      
+    cy.screenshot('init page');
     loginPage.submitLogin(userData.STANDARD_USER, userData.SYSTEM_PASSWORD);
     productsPage.getPathname().should('eq', constants.LOCATION_MESSAGE.INVENTORY_PATHNAME);
     headPage.getAppLogo().should('have.text', constants.EXPECTED_MESSAGE.LOGO_MESSAGE);
     productsPage.getProductTitle().should('have.text', constants.EXPECTED_MESSAGE.PRODUCT_TITLE_MESSAGE);    
+    cy.screenshot('products page');
   });
 
   it('007 - Inicio de sesión de usuario bloqueado', () => {
